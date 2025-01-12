@@ -9,13 +9,13 @@ router.route('/')
         res.json(data.employees);
     })
     .post((req,res)=>{
-        req.json({
+        res.json({
             "firstname": req.body.firstname,
             "lastname": req.body.lastname,
         });
     })
     .put((req,res)=>{
-        req.json({
+        res.json({
             "firstname": req.body.firstname,
             "lastname": req.body.lastname,
         });
